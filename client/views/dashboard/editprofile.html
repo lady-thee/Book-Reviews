@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&R</title>
+    <link rel="stylesheet" href="/public/stylesheets/tailwind.css">
+    <link rel="stylesheet" href="/public/stylesheets/main.css">
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Sen&display=swap" rel="stylesheet">
+</head>
+<!-- end of head  -->
+
+<!-- start of body  -->
+
+<body class="m-0 p-0 box-border max-sm:w-[500px] ">
+    <header class="w-full fixed top-0 left-0 bg-white z-10 ">
+        <div class="w-[200px] m-auto p-4 max-sm:flex justify-between max-sm:w-[500px]">
+            <a href="index.html" class="text-3xl no-underline hover:text-[#bba587] font-del">
+                <h1>Books & Reviews</h1>
+            </a>
+
+            <button class="hidden mr-2 border hover:border-gray-400 max-sm:block" id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+            </button>
+        </div>
+        
+        <hr class="border-t-1 border-t-black">
+
+        <nav class="w-[450px] mx-auto pt-3 pb-3 max-sm:hidden">
+            <a href="../index.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Home</a>
+            <a href="../posts.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Posts</a>
+            <a href="../about.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">About us</a>
+            <a href="../index.html#contact" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Contact us</a>
+            <a href="../logout.html" class="no-underline inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Log out</a>
+        </nav>
+        <!-- <hr class="border-t-1 border-t-black"> -->
+      
+        <div class="hidden w-[200px] absolute bg-white z-10 flex flex-col border items-center ml-[280px]" id="navshow">
+            <a href="../index.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Home</a>
+            <a href="../posts.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Posts</a>
+            <a href="../about.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">About us</a>
+            <a href="../index.html#contact" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Contact us</a>
+            <a href="../logout.html" class="no-underline inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Log out</a>
+        </div>
+          
+    </header>
+
+    <!-- end of header  -->
+
+    <main class=" mb-[200px] z-0  main max-sm:mt-0 ">
+        <hr class="border-t-1 border-t-black">
+        <div class="my-5 py-3"></div>
+        <div class="my-5 py-3"></div>
+        <section class="width p-4  bg-white"> 
+           <div class="form-c  shadow-md bg-[#bba58f]">
+                <form action="" method="post" class="form-control">
+                    <div class="w-[350px]  inline-block shadow-md">
+                        <h4 class="h4 text-white font-sen"><b>Edit Your Profile</b></h4>
+                    </div>
+                    <div class="my-1 py-1"></div>
+                    <hr class="border-t-1 border-t-black">
+                    <div class="my-1 py-1"></div>
+                    <div class="py-3">
+                        <input class=" p-2 w-[500px]  rounded-sm max-sm:w-[300px]" type="text" name="fullname" id="name" placeholder="full name" multiple required>
+                    </div>
+
+                    <div class="py-3">
+                        <input class=" p-2 w-[500px] border rounded-sm max-sm:w-[300px]" type="file" name="profile_pic" accept="image/*" id="profile_pic" >
+                    </div>
+
+                    <div class="py-3">
+                        <input class=" p-2 w-[500px] border rounded-sm max-sm:w-[300px]"  type="text" name="username"  id="uname" placeholder="username" >
+                    </div>
+
+                    <div class="py-3">
+                        <input class=" p-2 w-[500px] border rounded-sm max-sm:w-[300px]"  type="email" name="email"  id="email" placeholder="email" >
+                    </div>
+
+                    <div class="py-3">
+                        <input class="bg-white p-2 w-[100px] border rounded-sm max-sm:w-[100px]" type="submit" value="submit" name="submit_btn"  id="button" >
+                    </div>
+                </form>
+
+                
+           </div>
+        </section>
+
+      
+        
+    </main>
+
+    <!-- <div class="w-full mt-20"></div>
+        <div class="w-full mt-20"></div>  -->
+        <!-- <hr class="border-t-1 z-0 border-t-black"> -->
+
+    <footer class="bg-[#959d90] mt-24">
+        <div class="text-center p-5">
+            <p class="font-sen font-light">All rights reserved <span>&copy;2023</span> Books & Reviews</p>
+        </div>
+    </footer>
+</body>
+<script src="/public/javascript/main.js"></script>
+</html>
+
+
+  

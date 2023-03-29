@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&R</title>
+    <link rel="stylesheet" href="/public/stylesheets/tailwind.css">
+    <link rel="stylesheet" href="/public/stylesheets/main.css">
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Sen&display=swap" rel="stylesheet">
+</head>
+<!-- end of head  -->
+
+<!-- start of body  -->
+
+<body class="m-0 p-0 box-border ">
+    <header class="w-full fixed top-0 left-0 bg-white z-10 max-sm:w-[500px] max-md:w-[768px] max-lg:w-[1024px]">
+        <div class="w-[200px] m-auto p-4 max-sm:flex justify-between max-sm:w-[500px]">
+            <a href="index.html" class="text-3xl no-underline hover:text-[#bba587] font-del">
+                <h1>Books & Reviews</h1>
+            </a>
+
+            <button class="hidden mr-2 border hover:border-gray-400 max-sm:block" id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+            </button>
+        </div>
+        
+        <hr class="border-t-1 border-t-black">
+
+        <nav class="w-[450px] mx-auto pt-3 pb-3 max-sm:hidden">
+            <a href="index.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Home</a>
+            <a href="posts.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Posts</a>
+            <a href="about.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">About us</a>
+            <a href="../views/dashboard/dash.html" class="pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen text-black text-center">profile</a>
+            <a href="login.html" class="no-underline inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Login</a>
+        </nav>
+        <!-- <hr class="border-t-1 border-t-black"> -->
+      
+        <div class="hidden w-[200px] absolute bg-white z-10 flex flex-col border items-center ml-[280px]" id="navshow">
+            <a href="index.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Home</a>
+            <a href="posts.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Posts</a>
+            <a href="about.html" class="inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">About us</a>
+            <a href="../views/dashboard/dash.html" class="pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen text-black text-center">profile</a>
+            <a href="../views/dashboard/login.html" class="no-underline inline-block pt-3 pb-3 px-3 hover:border-b-2 border-b-black font-sen">Login</a>
+        </div>
+          
+    </header>
+
+    <!-- end of header  -->
+
+    <main class="w-full mb-[200px] z-0 mt-[150px]  max-sm:w-[500px] max-sm:mt-0 max-md:w-[768px] max-lg:w-[1024px]">
+        <hr class="border-t-1 border-t-black">
+        <div class="my-5 py-3"></div>
+        <section class="container  max-w-[90em] max-sm:mt-[55px] mx-auto">
+            <div class="row grid grid-cols-3  gap-7 max-sm:grid-cols-1 max-md:grid-cols-1 max-lg:grid-cols-1 ">
+                
+                <div class=" col-span-2 p-3 my-3">
+                    <div class="">
+                        <img src="/public/images/bg-books.jpg" class="max-h-[60vh] w-full rounded-md shadow-lg " alt="book cover">
+                    </div>
+                         <div class="my-2 py-3"></div>
+                         <hr class="border-t-1 border-t-gray-400">
+                    <div class="my-1 py-3"></div>
+                    <h4 class="font-light"><b>Title of blog</b></h4>
+                         <div class="my-1 py-2"></div>
+                         <hr class="border-t-1 border-t-gray-400">
+                    <div class="my-1 py-2"></div>
+                    <a href="profile.html" class="flex gap-7">
+                        <img src="/public/images/bg-books.jpg" class="w-[50px] h-[50px] rounded-[50%]" alt="profile id">
+                        <div class="px-2 ">
+                            <p class="text-gray-900 font-thin font-sen mb-0">Theola the Writer</p>
+                            <p class="text-gray-600 font-light font-sen text-[13px]">3 days ago</p>
+                        </div>
+                    </a>
+                    <div class="my-1 py-1"></div>
+                    <div class="flex gap-4">
+                        <a href="" class="inline-block border p-3">like</a>
+                        <a href="" class="inline-block border p-3">dislike</a>
+                    </div>
+                    <div class="my-1 py-1"></div>
+                    <div class="flex gap-4">
+                        <span  class="font-sen text-[13px] border font-light text-gray-600">#horror</span>
+                        <span  class="font-sen  text-[13px] border  font-light text-gray-600">#romance</span>
+                        <span  class="font-sen  text-[13px] border  font-light text-gray-600">#supernatural</span>
+                        <span  class="font-sen  text-[13px] border  font-light text-gray-600">#teen</span>
+                    </div>
+                    <div class="my-1 py-1"></div>
+
+                    <div class="p-2">
+                        <hr class=" border-t-gray-400 border-dotted">
+                        <div class="my-1 py-2"></div>
+                        <p class="font-sen text-lg text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum ipsa non et debitis necessitatibus optio quas
+                            quo. Voluptatibus praesentium, fugit fuga cumque eligendi et veniam repellat eaque assumenda omnis, quae, expedita eos
+                            at ad molestiae hic porro quam pariatur amet culpa eum in odit! Eveniet voluptate, officiis corporis distinctio vel
+                            nostrum dolorem, ratione maxime est debitis modi consequatur aperiam saepe fugiat facere perferendis! Cupiditate
+                            expedita, vel porro nulla minima temporibus sed minus ratione voluptates similique ducimus qui autem voluptas magni!
+                            Voluptatibus qui aliquid pariatur doloremque quisquam, similique quibusdam? Consectetur harum ipsum vitae ratione
+                            recusandae fugit, dicta ullam magni quia expedita perferendis voluptas sed accusamus rem voluptatibus quae impedit
+                            obcaecati provident! Voluptates officia reprehenderit explicabo minima consequuntur a maiores consequatur velit eum
+                            dolorem, illo dolores fuga deleniti expedita praesentium labore obcaecati commodi vero unde? Nihil obcaecati dolorem,
+                            quasi expedita eos magni placeat error nam totam eligendi culpa nesciunt quam deserunt aut laboriosam. Molestias
+                            nesciunt nobis quas magni expedita praesentium reiciendis sapiente placeat corporis esse. Rem officiis inventore neque
+                            deleniti veritatis voluptatibus vel accusamus iusto fuga exercitationem deserunt numquam quidem, minus obcaecati
+                            similique, ut libero ea suscipit. Neque a accusamus quas similique veritatis libero at maiores alias facere, cupiditate,
+                            suscipit quibusdam doloribus? Praesentium ducimus quas laboriosam porro minima. Rerum perferendis reiciendis at vero
+                            laudantium ipsa cupiditate sed ullam repellat cumque tempora repellendus dicta nihil amet unde blanditiis ut iste
+                            dolore, voluptates quos ex dolorum facere? Animi, perferendis placeat. Amet repudiandae nihil inventore maiores
+                            doloribus veniam aliquam. Dolorum consequuntur consectetur aliquam beatae porro? Doloribus laboriosam dolores
+                            accusantium enim perferendis magnam dolor beatae fugiat, eveniet aspernatur quis tempore adipisci dolore soluta suscipit
+                            natus nostrum voluptatum, dignissimos eos deleniti harum distinctio autem doloremque culpa. Accusamus reprehenderit
+                            dolor voluptate autem facilis iusto dicta odio ut unde reiciendis! Ipsam quae perferendis ut dolore suscipit omnis odit.
+                            
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum ipsa non et debitis necessitatibus optio
+                            quas quo. Voluptatibus praesentium, fugit fuga cumque eligendi et veniam repellat eaque assumenda omnis, quae,
+                            expedita eos at ad molestiae hic porro quam pariatur amet culpa eum in odit! Eveniet voluptate, officiis corporis
+                            distinctio vel nostrum dolorem, ratione maxime est debitis modi consequatur aperiam saepe fugiat facere perferendis!
+                            Cupiditate expedita, vel porro nulla minima temporibus sed minus ratione voluptates similique ducimus qui autem
+                            voluptas magni! Voluptatibus qui aliquid pariatur doloremque quisquam, similique quibusdam? Consectetur harum ipsum
+                            vitae ratione recusandae fugit, dicta ullam magni quia expedita perferendis voluptas sed accusamus rem voluptatibus
+                            quae impedit obcaecati provident! Voluptates officia reprehenderit explicabo minima consequuntur a maiores consequatur
+                            velit eum dolorem, illo dolores fuga deleniti expedita praesentium labore obcaecati commodi vero unde? Nihil obcaecati
+                            dolorem, quasi expedita eos magni placeat error nam totam eligendi culpa nesciunt quam deserunt aut laboriosam.
+                            Molestias nesciunt nobis quas magni expedita praesentium reiciendis sapiente placeat corporis esse. Rem officiis
+                            inventore neque deleniti veritatis voluptatibus vel accusamus iusto fuga exercitationem deserunt numquam quidem, minus
+                            obcaecati similique, ut libero ea suscipit. Neque a accusamus quas similique veritatis libero at maiores alias facere,
+                            cupiditate, suscipit quibusdam doloribus? Praesentium ducimus quas laboriosam porro minima. Rerum perferendis
+                            reiciendis at vero laudantium ipsa cupiditate sed ullam repellat cumque tempora repellendus dicta nihil amet unde
+                            blanditiis ut iste dolore, voluptates quos ex dolorum facere? Animi, perferendis placeat. Amet repudiandae nihil
+                            inventore maiores doloribus veniam aliquam. Dolorum consequuntur consectetur aliquam beatae porro? Doloribus
+                            laboriosam dolores accusantium enim perferendis magnam dolor beatae fugiat, eveniet aspernatur quis tempore adipisci
+                            dolore soluta suscipit natus nostrum voluptatum, dignissimos eos deleniti harum distinctio autem doloremque culpa.
+                            Accusamus reprehenderit dolor voluptate autem facilis iusto dicta odio ut unde reiciendis! Ipsam quae perferendis ut
+                            dolore suscipit omnis odit.
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum ipsa non et debitis necessitatibus optio
+                            quas quo. Voluptatibus praesentium, fugit fuga cumque eligendi et veniam repellat eaque assumenda omnis, quae,
+                            expedita eos at ad molestiae hic porro quam pariatur amet culpa eum in odit! Eveniet voluptate, officiis corporis
+                            distinctio vel nostrum dolorem, ratione maxime est debitis modi consequatur aperiam saepe fugiat facere perferendis!
+                            Cupiditate expedita, vel porro nulla minima temporibus sed minus ratione voluptates similique ducimus qui autem
+                            voluptas magni! Voluptatibus qui aliquid pariatur doloremque quisquam, similique quibusdam? Consectetur harum ipsum
+                            vitae ratione recusandae fugit, dicta ullam magni quia expedita perferendis voluptas sed accusamus rem voluptatibus
+                            quae impedit obcaecati provident! Voluptates officia reprehenderit explicabo minima consequuntur a maiores consequatur
+                            velit eum dolorem, illo dolores fuga deleniti expedita praesentium labore obcaecati commodi vero unde? Nihil obcaecati
+                            dolorem, quasi expedita eos magni placeat error nam totam eligendi culpa nesciunt quam deserunt aut laboriosam.
+                            Molestias nesciunt nobis quas magni expedita praesentium reiciendis sapiente placeat corporis esse. Rem officiis
+                            inventore neque deleniti veritatis voluptatibus vel accusamus iusto fuga exercitationem deserunt numquam quidem, minus
+                            obcaecati similique, ut libero ea suscipit. Neque a accusamus quas similique veritatis libero at maiores alias facere,
+                            cupiditate, suscipit quibusdam doloribus? Praesentium ducimus quas laboriosam porro minima. Rerum perferendis
+                            reiciendis at vero laudantium ipsa cupiditate sed ullam repellat cumque tempora repellendus dicta nihil amet unde
+                            blanditiis ut iste dolore, voluptates quos ex dolorum facere? Animi, perferendis placeat. Amet repudiandae nihil
+                            inventore maiores doloribus veniam aliquam. Dolorum consequuntur consectetur aliquam beatae porro? Doloribus
+                            laboriosam dolores accusantium enim perferendis magnam dolor beatae fugiat, eveniet aspernatur quis tempore adipisci
+                            dolore soluta suscipit natus nostrum voluptatum, dignissimos eos deleniti harum distinctio autem doloremque culpa.
+                            Accusamus reprehenderit dolor voluptate autem facilis iusto dicta odio ut unde reiciendis! Ipsam quae perferendis ut
+                            dolore suscipit omnis odit.
+                        </p>
+
+                       
+                    </div>
+                </div>
+
+                <div class=" col2 py-3 my-3 bg-[#e7ddd3]">
+                    <div class="my-1 py-2"></div>
+                     
+                    <div class=" h-[600px]  mb-16">
+                        <div class=" max-md:mt-[150px] mx-auto p-5 max-sm:w-[300px] max-sm:mt-[100px] inline-block">
+                            <form action="" method="post">
+                                <div>
+                                    <input type="search" name="search" value="" id="search" class="border-b-2 w-[350px] p-3 font-sen focus:outline-none max-sm:w-[320px]"
+                                     placeholder="leave a comment">
+                                    <input type="submit" value="send" class="border p-2 rounded-sm text-white bg-[#959d90]">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="my-1 py-2"></div>
+                        <h5 class="p-5 text-gray-900 font-bold text-[20px] font-sen mb-0"><b>Comments</b></h5>
+                        <div class="my-1 py-2"></div>
+                        <hr class="border-t-1 border-t-white">
+                      
+
+                        <div class="h-[1200px] overflow-auto px-2 py-3">
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+                            <div class="border p-3 rounded-md mb-6 bg-white">
+                                <h6 class="mb-1">
+                                    <b class="text-gray-900 font-semibold font-sen mb-0">Maryjane </b>
+                                    <span class="text-gray-600 font-light font-sen text-[13px]">- 3 days ago</span>
+                                </h6>
+                                <p class="text-gray-900 font-thin font-sen text-[14.5px]">I kinda agree with you, I honestly loved this book 😂. It shows a lot of
+                                    potential for the author. I think she's going places
+                                </p>
+                            </div>
+                        </div>
+                        
+
+                        
+                    
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+        </section>
+
+      
+        
+    </main>
+
+    <!-- <div class="w-full mt-20"></div>
+        <div class="w-full mt-20"></div>  -->
+        <!-- <hr class="border-t-1 z-0 border-t-black"> -->
+
+    <footer class="bg-[#959d90] mt-24">
+        <div class="text-center p-5">
+            <p class="font-sen font-light">All rights reserved <span>&copy;2023</span> Books & Reviews</p>
+        </div>
+    </footer>
+</body>
+<script src="/public/javascript/main.js"></script>
+</html>
+
+
+  
